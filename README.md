@@ -5,7 +5,7 @@
 $ docker build -t {tagname} .
 ```
 
-### Docker build image
+### Docker push image
 ``` bash
 $ docker tag {tagname} {docker-repo}
 $ docker push {docker-repo}
