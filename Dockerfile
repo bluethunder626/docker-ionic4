@@ -12,7 +12,7 @@ CMD ["/sbin/my_init"]
 RUN AZ_REPO=$(lsb_release -cs) \
     && echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list \
     && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 \
-    && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && apt-get -y update \
     && apt-get -y install nodejs \
     && apt-get -y install ansible \
