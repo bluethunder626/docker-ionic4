@@ -18,6 +18,7 @@ RUN AZ_REPO=$(lsb_release -cs) \
     && apt-get -y install ansible \
     && npm install -g @angular/cli@8.3.23 \
     && npm install -g ionic@5.4.16 cordova@9.0.0
+    && npm install -g puppeteer
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
